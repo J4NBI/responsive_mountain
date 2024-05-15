@@ -1,0 +1,523 @@
+/* ########### MAIN ################# */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat';
+  margin: 0px;
+  background-color: rgb(230, 230, 230);
+}
+
+/* ################# NAVIGATION ################### */
+
+
+nav a {
+  text-decoration: none;
+  color: rgb(95, 95, 95);
+}
+
+nav img {
+  float: left;
+  margin-left: 40px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+nav li {
+  font-size: 0.8em;
+  list-style-type: none;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 20px;
+  
+  
+}
+
+.nav-icons img {
+  margin: 5px;
+}
+
+nav ul a:hover,
+  nav ul a:focus {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 5px;
+  }
+
+  #check {
+    display: none;
+  }
+
+  nav label {
+    display: none;
+  }
+
+/* ################## HEADER ##################### */
+
+.landing {
+  position: relative;
+
+}
+
+.landing > img {
+  width: 100vw;
+  height: auto; 
+  object-fit: cover;
+}
+
+.landing div {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing-text {
+  width: 550px;
+}
+
+h1 {
+  text-shadow: 2px 1px 3.5px rgba(0, 0, 0, 0.5);
+  font-size: clamp(1rem, 30vw + 1rem, 8rem);
+  margin: 0px;
+}
+
+.landing-text p {
+  text-shadow: 2px 2px 3.5px black;
+  text-transform: uppercase;
+  color: rgb(255, 252, 252);
+  font-size: 1.5em;
+  margin-bottom: 50px;
+
+}
+
+
+/* ############# BUTTON ####################### */
+.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  box-shadow: 2px 2px 2.5px rgba(0, 0, 0, 0.65);;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+/* ######### Button site ######### */
+
+.btn41-43 {
+  padding: 10px 25px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+.btn-41 {
+  border: 2px solid rgb(0, 0, 0);
+  z-index: 1;
+  color: rgb(0, 0, 0);
+}
+
+/* #######  Button NAVBAR ################# */
+
+.checkbtn {
+  font-size: 1.5rem;
+}
+
+/* ############# GRID ############## */
+
+.grid { 
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 30px;
+  
+  
+}
+
+/*######### MAIN ################*/
+section {
+  margin: 0px;
+}
+
+.a-z {
+  justify-content: center;
+  background-color: white;
+}
+
+.machen h2 {
+  font-size: 2rem;
+  margin-top: 100px;
+  grid-column: 5 / span 4;
+  text-align: center;
+  color: rgb(246, 165, 15);
+}
+
+.grid p { 
+  font-size: 1.2rem;
+  grid-column: 5 / 9;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 100px ;
+}
+
+main p {
+  grid-column: span 12;
+  text-align: center;
+}
+
+
+/* ################# SECTION FINDEN ####################### */
+
+.finden {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.finden-sub {
+  margin-top: 40px;
+}
+
+.grid img {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 30px;
+  
+}
+
+
+.finden img{
+  grid-column: 3 /span 4 ;
+  align-self: center;
+  justify-self: center;
+
+
+}
+
+.finden-sub-div {
+  grid-column: 7 / span 4 ;
+  align-self: center;
+  justify-self: center;
+  
+
+}
+
+.finden-sub-div h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0px;
+  
+
+  
+}
+
+.finden-sub-div p {
+  text-align: left;
+  margin-bottom: 10px;
+
+}
+
+.btn-41 {
+  margin-top: 30px;
+}
+
+/* ########## GALLERY ############## */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+.container-c {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #ada692;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("img/01_Loewe.jpeg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+      background: url("img/02_Rome.jpeg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+      background: url("img/03_wandern.jpeg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+      background: url("img/04_patagonia.jpeg")
+        no-repeat 50% / cover;
+    }
+
+    .content-c {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(195, 118, 17);
+      background: linear-gradient(
+        0deg,
+        rgba(222, 172, 22, 0.676) 0%,
+        rgba(211, 160, 21, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover,
+    &:active {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #d2a41b;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content-c,
+    &:active .content-c {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+
+
+
+/* ##### FOOTER ###### */
+
+.footer-div {
+  background-color: rgb(95, 95, 95);
+  width: 100vw;
+  height: 50px;
+}
+
+
+/* ######## Media Queries Nav ################ */
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 2rem !important;
+  }
+  .landing-text{
+    font-size: 0.7rem !important;
+  }
+
+  header {
+    margin-top: 30px;
+  }
+
+
+  /* ###### Media Queries Nav ########### */
+
+  nav {
+    margin: 0px;
+    flex-direction: columnrov;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    margin-top: 30px;
+    z-index: 2;
+    top: -30px;
+    
+  }
+
+  
+
+  nav ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    width: 100%;
+    display: none;
+  
+  }
+
+  nav img,
+  nav .nav-icons {
+    margin-left: 0px;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  li {
+    flex-grow: 1;
+  }
+
+  #check {
+    float: right;
+  }
+
+  #check:checked ~ ul {
+    display: block;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  nav label {
+    display: block;
+  }
+
+
+
+  /* ###### Media Finden*/
+  .grid h2,
+  .grid p {
+    grid-column: 2 / span 10;
+  }
+
+
+  .finden-sub img {
+    grid-column: span 12;
+    width: 100%vw;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  .finden-sub div {
+    grid-column: 2 /span 10;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .finden-sub h2,
+  .finden-sub h3,
+  .finden-sub p{
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  
+  .btn-41 {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /*######## Media Queries h1 ##########*/
+
+  h1{
+    font-size: 3rem;
+  }
+  .landing-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .landing img {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+/*########## MEDIA Queries Gallery*/
+
+  .container-c {
+    flex-direction: column;
+  }
+
+  .container-c > div:nth-of-type(1) {
+    background-position: center -160px;
+  }
+
+  .container-c > div:nth-of-type(3) {
+    background-position: center -250px;
+  }  
+    
+}
+
