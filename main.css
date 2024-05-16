@@ -402,6 +402,110 @@ main p {
 }
 
 
+/* ################# SECTION PACKAGES ####################### */
+
+.tour-packages > p {
+
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px 25%;
+}
+
+.t-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tour-p {
+  flex: 0 0 20%; /* add this line */
+  margin: 10px; /* add some margin for spacing */
+}
+.tour-packages h2 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 100px;
+}
+
+.tour-packages {
+  background-color: white;
+  margin-top: 200px;
+  margin-bottom: 500px;
+  grid-column: span 12;
+}
+
+.tour-flex {
+  display:flex
+}
+
+.tour-flex div {
+  width: 300px;
+  height: 300px;
+}
+
+.p-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.p-images div {
+  position: relativ;
+  background-color: rgb(236, 182, 54);
+  width: 100%;
+  height: 80px;
+}
+
+.img-footer {
+  background-color: #d2a41b;
+  width: 300px;
+  height: 100px;
+}
+
+.img-footer :first-child {
+  font-weight: bold;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+
+.img-footer:hover,
+.img-footer:active {
+  background-color: rgb(77, 77, 77);
+  color:  rgb(236, 182, 54) ;
+  cursor: pointer;
+  
+}
+
+
+
+/*####### HOVER ON CONTAINER ####### */
+
+.p-images {
+  position: relative;
+  overflow: hidden;
+  max-width: 300px;
+  z-index: 1;
+}
+.p-images::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #e5e5e5;
+  opacity: 0;
+  transition: .5s ease all;
+}
+.p-images img {transition: .5s ease all; width: 100%; object-fit:cover;}
+
+.p-images:hover img {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
 
 
 /* ##### FOOTER ###### */
@@ -413,7 +517,7 @@ main p {
 }
 
 
-/* ######## Media Queries Nav ################ */
+/* ######## MEDIA QUERIES ################ */
 
 @media screen and (max-width: 900px) {
   html {
@@ -557,6 +661,14 @@ main p {
   .container-c > div:nth-of-type(3) {
     background-position: center -250px;
   }  
-    
+ /*########## MEDIA Queries Gallery*/
+ 
+ .tour-packages h2 {
+  font-size: 3rem;
+ }
+ .tour-packages > p {
+  font-size: 1.3rem;
+  padding: 100px 50px;
 }
 
+}
