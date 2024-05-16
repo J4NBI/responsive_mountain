@@ -46,7 +46,7 @@ nav a {
 
 nav img {
   float: left;
-  margin-left: 40px;
+ /
 }
 
 nav {
@@ -62,9 +62,14 @@ nav li {
   list-style-type: none;
   display: inline-block;
   text-transform: uppercase;
-  margin-left: 20px;
+  margin-left: auto;
+  padding: 10px;
   
   
+}
+
+.nav-icons {
+  padding-right: 40px;
 }
 
 .nav-icons img {
@@ -75,7 +80,7 @@ nav ul a:hover,
   nav ul a:focus {
     color: rgb(255, 255, 255);
     background-color: black;
-    padding: 5px;
+    
   }
 
   #check {
@@ -94,7 +99,7 @@ nav ul a:hover,
 }
 
 .landing > img {
-  width: 100vw;
+  width: 100%;
   height: auto; 
   object-fit: cover;
 }
@@ -109,6 +114,12 @@ nav ul a:hover,
 
 .landing-text {
   width: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  margin: 0px 0px 60px -50px;
 }
 
 h1 {
@@ -523,6 +534,8 @@ main p {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 0px;
+   
   }
   .landing img {
     margin-top: 40px;
