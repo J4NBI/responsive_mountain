@@ -46,7 +46,7 @@ nav a {
 
 nav img {
   float: left;
- /
+ 
 }
 
 nav {
@@ -93,33 +93,31 @@ nav ul a:hover,
 
 /* ################## HEADER ##################### */
 
+header {
+  /* width: 100vw; */
+  /* max-width: 100%; */
+  background-image: url('img/samuel-ferrara-1527pjeb6jg-unsplash.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
 .landing {
-  position: relative;
-
-}
-
-.landing > img {
-  width: 100%;
-  height: auto; 
-  object-fit: cover;
-}
-
-.landing div {
-  position: absolute;
   color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 300px 0px;
 }
+
 
 .landing-text {
-  width: 550px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   text-align: left;
-  margin: 0px 0px 60px -50px;
+  
 }
 
 h1 {
@@ -225,7 +223,7 @@ h1 {
   
 }
 
-/*######### MAIN ################*/
+/*######### Machen ################*/
 section {
   margin: 0px;
 }
@@ -236,19 +234,20 @@ section {
 }
 
 .machen h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 100px;
-  grid-column: 5 / span 4;
+  grid-column: 4 / span 6;
   text-align: center;
   color: rgb(246, 165, 15);
 }
 
 .grid p { 
-  font-size: 1.2rem;
-  grid-column: 5 / 9;
+  font-size: 1.6rem;
+  grid-column: 4 / span 6;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 100px ;
+  line-height: 25px;
 }
 
 main p {
@@ -294,7 +293,7 @@ main p {
 }
 
 .finden-sub-div h2 {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   text-align: left;
   margin: 0px;
   
@@ -305,6 +304,7 @@ main p {
 .finden-sub-div p {
   text-align: left;
   margin-bottom: 10px;
+  padding-top: 40px;
 
 }
 
@@ -406,10 +406,10 @@ main p {
 
 .tour-packages > p {
 
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-align: center;
   margin: 0 auto;
-  padding: 100px 25%;
+  padding: 50px 25% 100px 25% ;
 }
 
 .t-flex {
@@ -425,7 +425,7 @@ main p {
   padding-top: 100px;
   text-align: center;
   font-size: 4rem;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .tour-packages {
@@ -459,7 +459,7 @@ main p {
 }
 
 .img-footer {
-  background-color: #d2a41b;
+  background-color: var(--fc-1);
   width: 300px;
   height: 100px;
 }
@@ -507,27 +507,338 @@ main p {
 }
 
 
+/* ######## ERFAHRUNGEN ################ */
 
+/* ######## GRID LAYOUT ################ */
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  width: 100%;
+}
+
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+
+/* ######## GRID LAYOUT ################ */
+
+/* ######## ERFAHRUNGEN ################ */
+
+.exp h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: -400px;
+}
+
+.exp-icons-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+.ecp-icons {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:18%;
+  flex: 0 0 300px;
+}
+
+.ecp-icons > h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.ecp-icons > h4 {
+  text-align: center;
+  font-weight: normal;
+  
+}
+
+/* ######## People ################ */
+
+.people-left > h3 {
+  font-size: 5em;
+  color: white;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.people-left > p {
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 30px;
+  padding: 0px 20px;
+  max-width: 500px;
+}
+
+.people-left {
+  background-color:var(--fc-1);
+  float: left;
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.people-img > img{
+  width: 50%;
+  height: 800px;
+  object-fit: cover;
+}
+
+
+.best-price div > h3 {
+  color: #ac3924;
+  font-size: 2em;
+  padding: 20px;
+  text-align: center;
+}
+
+.best-price div > p {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* .best-price div > p::before {
+  display: block;
+  content: url('img/badge-check.svg');
+  border-radius: 50%;
+  padding-left: 30px;
+} */
+
+@media (max-width: 1200px) {
+  .people-left {
+    float: none;
+    width: 100%;
+    font-size: 0.9rem;
+}
+  .people-img > img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .people-left {
+    font-size: 0.7rem;
+  }
+  .people-left > h3 {
+    text-align: center;
+  }
+}
+
+/* ######## Workers ################ */
+
+
+.workers-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: start;
+  
+
+}
+
+.worker > img {
+  width: 120px;
+  height:120px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+  
+}
+
+.lukas > img{
+  object-position:-10% 30%;
+ 
+}
+.worker {
+  margin: 200px 30px;
+  text-align: center;
+  flex: 0 0 400px;
+}
+@media (min-width:300px) {
+  .worker {
+    margin:60px
+  }
+}
+.worker > p {
+  margin-bottom: 30px;
+  margin-top: 30px;
+
+}
+
+/* ############### FORM ############### */
+
+.div-form {
+  background-color: rgb(209, 169, 100);
+  opacity: 0.5;
+  background-image: url('img/mountain-form.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-blend-mode: multiply;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+ @media screen and (max-width:700px) {
+  form {
+    width: 90%;
+  }
+ }
+  
+
+.my-label {
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7rem;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.inp {
+
+  height: 50px;
+  font-size: 1.8;
+  opacity: 0.4;
+}
+
+.sub-btn {
+  width:150px;
+  height: 40px;
+}
+
+#datenschutz {
+  color: white;
+
+  display: grid;
+  grid-template-columns: 30px 1fr;
+
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+
+#datenschutz a {
+  color: var(--fc-1);
+}
+
+.check-datenschutz {
+
+  width: 20px;
+
+}
+
+input {
+  font-size: 1.5rem;
+  padding-left: 10px;
+  color: black;
+  ont-weight: bold;ont-weight: bold;
+}
+
+textarea::placeholder {
+  padding-top: 10px;
+  font-weight: bold;
+
+}
+
+textarea {
+  font-size: 1.5rem;
+  padding: 1em; /* Add 1em of padding to the top of the textarea */
+}
+
+form h2 {
+  font-size: 3rem;
+  padding-bottom: 50px;
+  color: var(--fc-1);
+}
 /* ##### FOOTER ###### */
 
 .footer-div {
-  background-color: rgb(95, 95, 95);
-  width: 100vw;
-  height: 50px;
+  background-color: var(--fc-1);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-div > p {
+ color: white;
+}
+
+.footer-div > a {
+  color: white;
+}
+
+div span {
+ font-weight: bolder;
 }
 
 
 /* ######## MEDIA QUERIES ################ */
 
 @media screen and (max-width: 900px) {
+
+  body {
+    margin: 0px;
+  }
+
   html {
     font-size: 15px;
   }
   h1 {
-    font-size: 2rem !important;
+    font-size: 4rem !important;
+    padding-top: 80px;
   }
   .landing-text{
     font-size: 0.7rem !important;
+  }
+
+  .button-6 {
+    display: none;
   }
 
   header {
@@ -539,6 +850,7 @@ main p {
 
   nav {
     margin: 0px;
+    padding-left: 30px;
     flex-direction: columnrov;
     align-items: center;
     text-align: center;
@@ -564,7 +876,7 @@ main p {
 
   nav img,
   nav .nav-icons {
-    margin-left: 0px;
+    margin-left: -50px;
   }
 
   nav ul li {
@@ -668,7 +980,16 @@ main p {
  }
  .tour-packages > p {
   font-size: 1.3rem;
-  padding: 100px 50px;
+  padding: 10px 50px 80px 30px;
+}
+/*########## MEDIA Queries Worker*/
+.worker {
+  margin: 80px 0px;
+}
+/*########## MEDIA Queries Form */
+
+.div-form {
+  padding: 30px 0px;
 }
 
 }
